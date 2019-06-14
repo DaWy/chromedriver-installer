@@ -22,6 +22,7 @@ m = re.search('Latest stable release: <a[^>]* href="([^"]*)"', r.text)
 version_link = m.group(1)
 print('[OK!] Link: %s' % version_link)
 
+
 # Parse Version
 print('Parsing version...')
 parsed = urlparse.urlparse(version_link)

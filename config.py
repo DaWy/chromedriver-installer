@@ -5,3 +5,4 @@
 CHROMEDRIVER_URL = 'http://chromedriver.chromium.org'
 CHROMEDRIVER_DEST_PATH = '/opt/chromedriver'
 CHROMEDRIVER_DL_URL = 'https://chromedriver.storage.googleapis.com/'
+
