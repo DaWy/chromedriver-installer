@@ -18,7 +18,8 @@ print('Getting last version link...')
 r = requests.get(CHROMEDRIVER_URL)
 
 # Get last release DL link
-m = re.search('Latest stable release: <a[^>]* href="([^"]*)"', r.text)
+m = re.search('release: <a[^>]* href="([^"]*)"', r.text)
+print(m)
 version_link = m.group(1)
 print('[OK!] Link: %s' % version_link)
 
